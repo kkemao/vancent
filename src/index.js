@@ -3,14 +3,16 @@ import ReactDOM from "react-dom";
 import { UserProvider } from "./UserContext";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./index.css";
-import App from "./App";
+import "antd/dist/antd.css";
+import Home from "./home";
 import App1 from "./App1";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <UserProvider>
     <Router>
-      <Route path="/" exact component={App}></Route>
+      <Route path="/" exact component={Home}></Route>
+      <Route path="/home" exact component={Home}></Route>
       <Route path="/app" component={App1}></Route>
     </Router>
   </UserProvider>,

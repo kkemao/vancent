@@ -1,0 +1,117 @@
+.header {
+  /* background: red; */
+  height: calc(45px + 5vmin);
+  max-height: 90px;
+  display: flex;
+  align-items: center;
+  padding: 0 calc(25px + 2vmin);
+  font-size: calc(10px + 2vmin);
+}
+.header-logo {
+  flex: 0 0 210px;
+  height: 100%;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../assets/headerlogo.svg);
+}
+.header-menu {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  direction: rtl;
+  font-size: 16px;
+  /* font-size: calc(10px + 1vmin); */
+  color: rgba(255, 255, 255, 0.5);
+  height: 100%;
+  margin-right: 5%;
+}
+.header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.header .ul-first {
+  height: 100%;
+}
+.header .ul-first .li-first {
+  float: left;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 30px;
+  position: relative;
+  transition: all 0.5s ease;
+}
+.header .ul-first .li-first:hover {
+  background: #101010;
+}
+.header .ul-first .li-first:hover > span {
+  color: white;
+}
+.header .ul-second {
+  background: #101010;
+  position: absolute;
+  top: 100%;
+  min-width: 180%;
+  left: 0px;
+  text-align: left;
+  font-size: 16px;
+  padding: 5px 0px;
+  overflow: hidden;
+  transform-origin: left top;
+  transform: scale(0.5, 0);
+  transition: all 0.2s ease;
+}
+.header .ul-first .li-first:hover .ul-second {
+  /* height: 100%; */
+  transform: scale(1, 1);
+}
+.header .li-second {
+  padding: 20px 30px;
+}
+.header .li-second:hover {
+  /* background: #3c3c3c; */
+}
+.header .li-second:hover > span {
+  color: white;
+}
+.header .li-second:nth-child(2):hover:after {
+  -webkit-filter: drop-shadow(0px 0 0 #dab475);
+  filter: drop-shadow(0px 0 0 #dab475);
+}
+.header .li-second:nth-child(1):hover:after {
+  -webkit-filter: drop-shadow(0px 0 0 #2996ff);
+  filter: drop-shadow(0px 0 0 #2996ff);
+}
+.header .li-second:after {
+  content: "";
+  float: left;
+  width: 32px;
+  height: 32px;
+  /* background: red; */
+  /* position: relative;
+  top: 2px; */
+  margin-right: 10px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* background-image: url(https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg); */
+}
+.header .li-second:nth-child(1):after {
+  background-image: url(../assets/jsfw.svg);
+}
+.header .li-second:nth-child(2):after {
+  background-image: url(../assets/sjfw.svg);
+}
+.header .blue-line {
+  float: left;
+  width: 100%;
+  height: 1px;
+  background: #0071ff;
+  position: relative;
+  top: 8px;
+}
