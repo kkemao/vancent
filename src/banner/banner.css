@@ -1,0 +1,49 @@
+.Banner-container {
+  flex: 1 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #0e0e0e;
+  background-origin: content-box;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.banner-box {
+  display: flex;
+  flex-direction: column;
+  margin-left: 17%;
+  /* height: 50%; */
+}
+.banner-title {
+  font-family: PingFangSC-Medium;
+  font-size: 36px;
+  color: #ffffff;
+  letter-spacing: 2px;
+  line-height: 72px;
+}
+.banner-content {
+  font-family: PingFangSC-Regular;
+  font-size: 20px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  line-height: 48px;
+}
+.button-style {
+  background-color: #0071ff;
+  border-color: #0071ff;
+  width: 150px;
+  margin-top: 12%;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 1.25px;
+}
+.banner-mouse {
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: calc(50% - 25px);
+  bottom: 42px;
+}

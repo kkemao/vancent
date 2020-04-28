@@ -7,14 +7,22 @@
   padding: 0 calc(25px + 2vmin);
   font-size: calc(10px + 2vmin);
 }
-.header-logo {
+/* .header-logo {
   flex: 0 0 210px;
   height: 100%;
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url(../assets/headerlogo.svg);
+} */
+.header-logo {
+  flex: 0 0 210px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .header-menu {
   flex-grow: 1;
   display: flex;
@@ -110,7 +118,7 @@
 .header .blue-line {
   float: left;
   width: 100%;
-  height: 1px;
+  height: 2px;
   background: #0071ff;
   position: relative;
   top: 8px;

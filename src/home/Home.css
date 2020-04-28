@@ -1,4 +1,145 @@
 .Header-container {
   background: black;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 }
+.Main-container {
+  overflow: auto;
+  display: flex;
+  flex: 1 0 auto;
+  height: 100%;
+}
+
+/* 万视，用心打造数字化产品和品牌 */
+.section-sec {
+  min-height: 385px;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section-sec-title {
+  font-family: PingFangSC-Medium;
+  font-size: 36px;
+  color: #ffffff;
+  letter-spacing: 2px;
+  line-height: 72px;
+}
+.section-sec-content {
+  font-family: PingFangSC-Regular;
+  font-size: 26px;
+  color: #2996ff;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1%;
+  cursor: pointer;
+}
+.section-sec-content-icon {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* 万视，用心打造数字化产品和品牌 */
+
+/* 案例分析 */
+.section-third {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-around;
+  background: black;
+  flex: 0 0 auto;
+}
+.section-third > div {
+  width: 49%;
+  overflow: hidden;
+  margin: 0.5%;
+}
+.section-third > div img {
+  height: 100%;
+  width: 100%;
+}
+/* 案例分析 */
+
+/* 万视，用心打造数字化产品和品牌 */
+.section-fourth {
+  min-height: 500px;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section-fourth-title {
+  font-family: PingFangSC-Medium;
+  font-size: 36px;
+  color: #ffffff;
+  letter-spacing: 2px;
+  line-height: 72px;
+}
+.section-fourth-content {
+  font-family: PingFangSC-Regular;
+  font-size: 26px;
+  color: #2996ff;
+  letter-spacing: 1px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%;
+  width: 50%;
+  cursor: pointer;
+}
+.sfc-color {
+  color: #dab475;
+}
+.section-fourth-content-icon {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.icon-mr {
+  margin-right: 11%;
+}
+/* 万视，用心打造数字化产品和品牌 */
+
+/* 章节五 */
+.section-fifth {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 0 0 auto;
+  justify-content: space-around;
+  background: black;
+}
+.sf-item {
+  width: 30%;
+  min-height: calc(116px + 14vmin);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* 章节五 */
+
+/* 章节六 */
+.section-sixth {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 0 0 auto;
+  justify-content: space-around;
+  background: black;
+  border-top: 1px solid #3c3c3c;
+}
+.ss-item {
+  width: 32%;
+  min-height: calc(159px + 44vmin);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* 章节六 */

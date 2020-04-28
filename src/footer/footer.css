@@ -1,0 +1,30 @@
+/* 合作咨询 如需了解详情，您可留言咨询，我们将为您提供更多服务信息 */
+.section-eighth {
+  min-height: calc(219px + 21vmin);
+  background: #101010;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.section-eighth-title {
+  font-family: PingFangSC-Regular;
+  font-size: 28px;
+  color: #ffffff;
+  letter-spacing: 3px;
+  line-height: 72px;
+}
+.section-eighth-content {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+.section-eighth .mtp {
+  margin-top: 5%;
+}
