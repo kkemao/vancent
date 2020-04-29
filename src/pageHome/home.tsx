@@ -26,12 +26,12 @@ function Home(props: Props) {
   const badgesImg = ["tengxun.png", "huawei.png", "sanxing.png"];
   return (
     <div className="App-header">
-      <div className="Header-container">
-        <Header styleMode={StyleMode.BLACK} {...props} />
-      </div>
-      <div className="Main-container">
-        <Banner />
-      </div>
+      <Header styleMode={StyleMode.BLACK} {...props} />
+      <Banner
+        title="让创意再次伟大"
+        content="让数字化和创意受益于每一个人和组织"
+        bannerImg="homebanner.png"
+      />
       {/* 章节二 万视，用心打造数字化产品和品牌 */}
       <div className="section-sec">
         <h5 className="section-sec-title">万视，用心打造数字化产品和品牌</h5>
@@ -90,7 +90,7 @@ function Home(props: Props) {
           ></div>
         ))}
       </div>
-      <Seemore />
+      <Seemore content="查看我们更多案例" />
       <Footer />
       {/* 章节八 FooterBottom */}
       <FooterBottom />

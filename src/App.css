@@ -50,6 +50,18 @@ h5 {
   padding: 0;
   margin: 0;
 }
+.pr {
+  position: relative;
+}
+.bluecolor {
+  color: #2996ff;
+}
+.cp {
+  cursor: pointer;
+}
+.dn {
+  display: none;
+}
 
 /*定义滚动条高宽及背景
  高宽分别对应横竖滚动条的尺寸*/

@@ -1,3 +1,9 @@
+.Main-container {
+  overflow: auto;
+  display: flex;
+  flex: 1 0 auto;
+  height: 100%;
+}
 .Banner-container {
   flex: 1 0 auto;
   background-repeat: no-repeat;
@@ -32,7 +38,7 @@
   background-color: #0071ff;
   border-color: #0071ff;
   width: 150px;
-  margin-top: 12%;
+  margin-top: 45px;
   font-family: PingFangSC-Regular;
   font-size: 14px;
   color: #ffffff;

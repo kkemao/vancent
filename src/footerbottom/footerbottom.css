@@ -53,4 +53,16 @@
 .footbc-item-l {
   flex: 0 0 auto;
   padding-top: 4%;
+  position: relative;
+}
+.qrcode-style {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  bottom: 10px;
+  left: -165px;
+  opacity: 0;
+}
+.qrcode-box:hover .qrcode-style {
+  opacity: 1;
 }
