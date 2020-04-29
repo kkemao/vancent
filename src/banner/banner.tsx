@@ -1,6 +1,5 @@
 import React from "react";
 import { Button } from "antd";
-import "./banner.css";
 
 interface Props extends React.Props<any> {
   title: string;

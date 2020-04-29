@@ -1,0 +1,29 @@
+.case-list-container {
+  display: flex;
+  flex: 0 0 auto;
+  flex-flow: row nowrap;
+  align-items: center;
+  /* justify-items: center; */
+  justify-content: center;
+  height: 256px;
+}
+.case-list-card {
+  display: flex;
+  flex: 0 0 92%;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  border-bottom: 1px solid;
+}
+.case-list-item {
+  flex: 1 0 auto;
+  text-align: center;
+  font-family: PingFangSC-Medium;
+  font-size: 18px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+.case-list-item.active {
+  color: #3484ff;
+}

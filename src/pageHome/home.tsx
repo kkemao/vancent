@@ -2,9 +2,8 @@ import React from "react";
 import Header from "../header";
 import Banner from "../banner";
 import * as H from "history";
-import "./Home.css";
 import { StyleMode } from "../constants/Header";
-import Case from "../case/index";
+import Cases from "../case/cases";
 import Footer from "../footer";
 import FooterBottom from "../footerbottom";
 import Seemore from "../seemorecase";
@@ -13,8 +12,7 @@ interface Props {
   history: H.History;
 }
 function Home(props: Props) {
-  console.log(props);
-  const caseImg = ["case1.png", "case2.png", "case3.png", "case4.png"];
+  console.log("zkf", props);
   const teamLogo = [
     "teamlogo1.png",
     "teamlogo2.png",
@@ -45,12 +43,7 @@ function Home(props: Props) {
           ></span>
         </h5>
       </div>
-      {/* 章节三 案例列表 */}
-      <div className="section-third">
-        {caseImg.map(url => (
-          <Case key={url} url={url} />
-        ))}
-      </div>
+      <Cases />
 
       {/* 章节四 深入赋能行业，与品牌共同成长 */}
       <div className="section-fourth">

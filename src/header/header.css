@@ -50,6 +50,9 @@
 .header .ul-first {
   height: 100%;
 }
+.li-first.active {
+  color: white;
+}
 .header .ul-first .li-first {
   float: left;
   cursor: pointer;

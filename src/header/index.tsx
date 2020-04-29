@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import * as H from "history";
 import "./header.css";
 
@@ -16,7 +16,6 @@ interface IMenu {
 }
 
 function Header(props: Props): JSX.Element {
-  const [currentIndex, setCurrentIndex] = useState(1);
   // const timeRef = useRef<any>();
   // useEffect(() => {
   //   timeRef.current = setInterval(() => {
@@ -29,7 +28,6 @@ function Header(props: Props): JSX.Element {
   //     clearInterval(timeRef.current);
   //   };
   // }, [props.history]);
-  console.log(props, process, process.env.PUBLIC_URL);
   const { history, match } = props;
   const menu = [
     {
@@ -92,7 +90,9 @@ function Header(props: Props): JSX.Element {
             {menu.map(item => {
               return (
                 <li
-                  className="li-first"
+                  className={`li-first ${
+                    match.path.indexOf(item.url) !== -1 ? "active" : ""
+                  }`}
                   onClick={() => {
                     history.push(item.url);
                   }}

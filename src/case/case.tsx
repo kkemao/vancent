@@ -1,5 +1,4 @@
 import React from "react";
-import "./case.css";
 
 interface Props extends React.Props<any> {
   url: string;

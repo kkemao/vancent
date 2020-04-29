@@ -42,3 +42,22 @@
 .case-box:hover .shadow-content {
   transform: translateX(0);
 }
+
+/* cases模块用到 */
+.section-third {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-around;
+  background: black;
+  flex: 0 0 auto;
+}
+.section-third > div {
+  width: 49%;
+  overflow: hidden;
+  margin: 0.5%;
+}
+.section-third > div img {
+  height: 100%;
+  width: 100%;
+}
+/* cases模块用到 */

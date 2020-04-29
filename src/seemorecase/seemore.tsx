@@ -1,5 +1,4 @@
 import React from "react";
-import "./seemore.css";
 
 interface Props extends React.Props<any> {
   content: string;

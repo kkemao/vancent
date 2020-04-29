@@ -34,26 +34,7 @@
 }
 /* 万视，用心打造数字化产品和品牌 */
 
-/* 案例分析 */
-.section-third {
-  display: flex;
-  flex-flow: row wrap;
-  align-content: space-around;
-  background: black;
-  flex: 0 0 auto;
-}
-.section-third > div {
-  width: 49%;
-  overflow: hidden;
-  margin: 0.5%;
-}
-.section-third > div img {
-  height: 100%;
-  width: 100%;
-}
-/* 案例分析 */
-
-/* 万视，用心打造数字化产品和品牌 */
+/* 深入赋能行业，与品牌共同成长 */
 .section-fourth {
   min-height: 500px;
   background: black;
@@ -95,7 +76,7 @@
 .icon-mr {
   margin-right: 11%;
 }
-/* 万视，用心打造数字化产品和品牌 */
+/* 深入赋能行业，与品牌共同成长 */
 
 /* 章节五 */
 .section-fifth {

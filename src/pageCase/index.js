@@ -1,2 +1,2 @@
-import "./Case.css";
-export { default } from "./case";
+import "./Casepage.css";
+export { default } from "./casepage";
