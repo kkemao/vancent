@@ -6,6 +6,8 @@ import "./index.css";
 import "antd/dist/antd.css";
 import Home from "./pageHome";
 import Case from "./pageCase";
+import ContactPage from "./pageContact";
+import AboutPage from "./pageAbout";
 import App1 from "./App1";
 import * as serviceWorker from "./serviceWorker";
 
@@ -15,6 +17,8 @@ ReactDOM.render(
       <Route path="/" exact render={() => <Redirect to="/home" push />}></Route>
       <Route path="/home" exact component={Home}></Route>
       <Route path="/case" exact component={Case}></Route>
+      <Route path="/contact" exact component={ContactPage}></Route>
+      <Route path="/about" exact component={AboutPage}></Route>
       <Route path="/app" component={App1}></Route>
       {/* <Redirect from="/" to="/home" /> */}
       {/* <Route component={App1} /> */}

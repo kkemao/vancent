@@ -53,3 +53,7 @@
   left: calc(50% - 25px);
   bottom: 42px;
 }
+.center-right {
+  background-size: auto;
+  background-position: 85% 60%;
+}

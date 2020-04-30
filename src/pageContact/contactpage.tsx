@@ -5,24 +5,22 @@ import * as H from "history";
 import { StyleMode } from "../constants/Header";
 import Footer from "../footer";
 import FooterBottom from "../footerbottom";
-import CaseList from "../caselistbox";
-import Seemore from "../seemorecase";
+import Exlogo from "../exlogo";
 
 interface Props {
   history: H.History;
 }
-function Home(props: Props) {
+function ContactPage(props: Props) {
   return (
     <div className="App-header">
       <Header styleMode={StyleMode.BLACK} {...props} />
       <Banner
-        title="案例 | 赋能数字化与新消费"
-        content="与超过30家合作伙伴一道，共同迎接数字化与品牌转型新机会"
-        bannerImg="casebanner.png"
+        title="联系我们"
+        content="可以提交您的需求或者业务问题，我们会及时回复"
+        bannerImg="contactbanner.png"
+        imgMode="centerright"
       />
-      <CaseList />
-      <Seemore content="去看看我们能提供哪些服务" />
-      <div style={{ marginBottom: "10px" }}></div>
+      <Exlogo />
       <Footer />
       {/* 章节八 FooterBottom */}
       <FooterBottom />
@@ -30,4 +28,4 @@ function Home(props: Props) {
   );
 }
 
-export default Home;
+export default ContactPage;

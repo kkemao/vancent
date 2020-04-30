@@ -1,0 +1,39 @@
+.vision-box {
+  display: flex;
+  flex: 0 0 auto;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 460px;
+  align-items: center;
+  justify-content: center;
+}
+.vision-box > div {
+  width: 88%;
+  text-align: center;
+  /* max-width: 960px; */
+}
+.vision-title {
+  font-family: PingFangSC-Light;
+  font-size: 38px;
+  color: #ffffff;
+  letter-spacing: 3px;
+  text-align: center;
+  line-height: 50px;
+}
+.vision-content {
+  font-family: PingFangSC-Light;
+  font-size: 18px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 30px;
+}
+.vision-line {
+  background: #0071ff;
+  border-radius: 4px;
+  height: 3px;
+  flex: 0 0 auto;
+  width: 80px !important;
+  margin-top: 1%;
+  margin-bottom: 4%;
+}

@@ -5,14 +5,17 @@ interface Props extends React.Props<any> {
   title: string;
   content: string;
   bannerImg: string;
+  imgMode?: string;
 }
 
 function Banner(props: Props) {
-  const { title, content, bannerImg } = props;
+  const { title, content, bannerImg, imgMode } = props;
   return (
     <div className="Main-container">
       <div
-        className="Banner-container"
+        className={`${
+          imgMode && imgMode === "centerright" ? "center-right" : ""
+        } Banner-container`}
         style={{
           color: "#333",
           backgroundImage: `url(${process.env.PUBLIC_URL}/${bannerImg})`

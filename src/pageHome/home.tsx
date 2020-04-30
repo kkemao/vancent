@@ -84,6 +84,7 @@ function Home(props: Props) {
         ))}
       </div>
       <Seemore content="查看我们更多案例" />
+      <div style={{ marginBottom: "10px" }}></div>
       <Footer />
       {/* 章节八 FooterBottom */}
       <FooterBottom />
