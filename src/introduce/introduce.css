@@ -5,7 +5,7 @@
   width: 100%;
   height: 700px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   padding: 0px 10%;
 }
 .drreverse {
@@ -22,7 +22,7 @@
 }
 .introduce-i {
   flex: 0 0 auto;
-  width: 50%;
+  width: 42%;
 }
 .introduce-line {
   border: 1px solid #cba766;
