@@ -56,8 +56,23 @@
   overflow: hidden;
   margin: 0.5%;
 }
-.section-third > div img {
+.section-third > div > img {
   height: 100%;
   width: 100%;
+}
+.case-arrow-r {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 3%;
+  bottom: 5%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.2s ease;
+  transform: scale(0);
+}
+.case-box:hover .case-arrow-r {
+  transform: scale(1);
 }
 /* cases模块用到 */

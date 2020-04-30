@@ -12,6 +12,17 @@ function Case(props: Props) {
       <div className="case-shadow">
         <h5 className="shadow-title">一瓶美食社区App</h5>
         <h5 className="shadow-content">从0到1，重新定义年轻化的饮品美食社区</h5>
+        {/* <img
+          className="case-arrow-r"
+          alt=""
+          src={`${process.env.PUBLIC_URL}/casearrow.svg`}
+        /> */}
+        <span
+          className="case-arrow-r"
+          style={{
+            backgroundImage: `url(${process.env.PUBLIC_URL}/casearrow.svg)`
+          }}
+        ></span>
       </div>
     </div>
   );

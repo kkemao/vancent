@@ -49,6 +49,7 @@ function AboutPage(props: Props) {
         icontent="技术与设计创新没有穷尽，以开放积极的态度拥抱变化与不确定性。持续自我迭代，不断发现新趋势与新规律，并为合作伙伴带来新的价值。"
         isReverse={false}
       />
+      <div style={{ marginBottom: "5%" }}></div>
       <Seemore content="直接联系我们" />
       <div style={{ marginBottom: "10px" }}></div>
       <Footer />
