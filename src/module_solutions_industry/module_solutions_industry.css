@@ -1,0 +1,56 @@
+.msoi-box {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 100%;
+}
+
+.msoi-box > div {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 0 auto;
+  align-items: center;
+  width: 75%;
+}
+
+.msoib-b {
+  justify-content: space-between;
+}
+
+.msoi-box-item {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  width: 28%;
+}
+
+.msoi-title {
+  font-family: PingFangSC-Light;
+  font-size: 38px;
+  color: #ffffff;
+  letter-spacing: 0;
+  justify-content: space-around;
+}
+.msoi-content {
+  font-family: PingFangSC-Semibold;
+  font-size: 24px;
+  color: #ffffff;
+  letter-spacing: 0;
+  margin-top: calc(20px + 3vmin);
+}
+.msoi-content2 {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-top: calc(10px + 2vmin);
+}
+
+.msoi-box-item img {
+  /* margin-top: 80%; */
+}

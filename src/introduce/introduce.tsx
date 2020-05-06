@@ -9,6 +9,17 @@ interface Props extends React.Props<any> {
   imgName: string;
 }
 
+/**
+ * 图文介绍模块
+ * @Props
+ * @isReverse?: boolean;
+ * @ienfir: string;
+ * @iensec: string;
+ * @ititle: string;
+ * @icontent: string;
+ * @imgName: string;
+ */
+
 function Introduce(props: Props) {
   const { isReverse, ienfir, iensec, ititle, icontent, imgName } = props;
   return (

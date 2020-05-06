@@ -1,5 +1,10 @@
 import React from "react";
 
+/**
+ * 我们的愿景
+ * @params 无参
+ */
+
 function Vision() {
   return (
     <div className="vision-box">

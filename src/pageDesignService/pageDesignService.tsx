@@ -5,23 +5,23 @@ import * as H from "history";
 import { StyleMode } from "../constants/Header";
 import Footer from "../footer";
 import FooterBottom from "../footerbottom";
-import CaseList from "../caselistbox";
+import TextArrow from "../textarrow";
 import Seemore from "../seemorecase";
 
 interface Props {
   history: H.History;
 }
-function Case(props: Props) {
+function DesignService(props: Props) {
   return (
     <div className="App-header">
       <Header styleMode={StyleMode.BLACK} {...props} />
       <Banner
-        title="案例 | 赋能数字化与新消费"
-        content="与超过30家合作伙伴一道，共同迎接数字化与品牌转型新机会"
-        bannerImg="casebanner.png"
+        title="创意设计/营销服务"
+        content="Creative Design / Marketing Services"
+        bannerImg="sjfwbanner1.png"
       />
-      <CaseList />
-      <Seemore content="去看看我们能提供哪些服务" />
+      <TextArrow img={"sjfw.svg"} title="设计服务" color="sfc-color" />
+      <Seemore content="查看我们更多案例" />
       <div style={{ marginBottom: "10px" }}></div>
       <Footer />
       {/* 章节八 FooterBottom */}
@@ -30,4 +30,4 @@ function Case(props: Props) {
   );
 }
 
-export default Case;
+export default DesignService;

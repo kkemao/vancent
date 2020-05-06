@@ -32,31 +32,31 @@ function Header(props: Props): JSX.Element {
   const menu = [
     {
       id: 1,
-      url: "home",
+      url: "/home",
       name: "首页",
       hasChild: false
     },
     {
       id: 2,
-      url: "case",
+      url: "/case",
       name: "行业案例",
       hasChild: false
     },
     {
       id: 3,
-      url: "service",
+      url: "/service",
       name: "产品服务",
       hasChild: true,
       child: [
         {
           id: 6,
-          url: "technologyService",
+          url: "/service/technology",
           name: "技术服务",
           hasChild: false
         },
         {
           id: 7,
-          url: "designService",
+          url: "/service/design",
           name: "设计服务",
           hasChild: false
         }
@@ -64,13 +64,13 @@ function Header(props: Props): JSX.Element {
     },
     {
       id: 4,
-      url: "about",
+      url: "/about",
       name: "关于",
       hasChild: false
     },
     {
       id: 5,
-      url: "contact",
+      url: "/contact",
       name: "联系",
       hasChild: false
     }
@@ -94,7 +94,7 @@ function Header(props: Props): JSX.Element {
                     match.path.indexOf(item.url) !== -1 ? "active" : ""
                   }`}
                   onClick={() => {
-                    history.push(item.url);
+                    !item.hasChild && history.push(item.url);
                   }}
                   key={item.id}
                 >

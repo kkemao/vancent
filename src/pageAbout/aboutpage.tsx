@@ -18,8 +18,8 @@ function AboutPage(props: Props) {
     <div className="App-header">
       <Header styleMode={StyleMode.BLACK} {...props} />
       <Banner
-        title="联系我们"
-        content="可以提交您的需求或者业务问题，我们会及时回复"
+        title="关于我们"
+        content="以数字化转型为基础的科技和设计公司"
         bannerImg="aboutus.png"
         imgMode="centerright"
       />
