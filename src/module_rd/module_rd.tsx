@@ -17,15 +17,15 @@ function Mrd(props: Props) {
           <h5 className="mrd-content">先进技术架构</h5>
         </div>
         <div className="mrdb-item">
-          <img src={`${process.env.PUBLIC_URL}/rdicon1.png`} alt="icon" />
+          <img src={`${process.env.PUBLIC_URL}/rdicon2.png`} alt="icon" />
           <h5 className="mrd-content">安全稳定</h5>
         </div>
         <div className="mrdb-item">
-          <img src={`${process.env.PUBLIC_URL}/rdicon1.png`} alt="icon" />
+          <img src={`${process.env.PUBLIC_URL}/rdicon3.png`} alt="icon" />
           <h5 className="mrd-content">赠送免费维护</h5>
         </div>
         <div className="mrdb-item">
-          <img src={`${process.env.PUBLIC_URL}/rdicon1.png`} alt="icon" />
+          <img src={`${process.env.PUBLIC_URL}/rdicon4.png`} alt="icon" />
           <h5 className="mrd-content">企业级应用经验</h5>
         </div>
       </div>

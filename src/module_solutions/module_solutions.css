@@ -14,6 +14,7 @@
   flex: 1 0 auto;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .mso-box-item-box {
@@ -23,14 +24,14 @@
   justify-content: center;
 }
 
-.mso-title1 {
+.mso-title {
   font-size: 23px;
   color: #ffffff;
   letter-spacing: 0;
   margin-bottom: calc(60px + 6vmin);
   margin-top: calc(60px + 12vmin);
 }
-.mso-title2 {
+.mso-content {
   font-family: PingFangSC-Light;
   font-size: 18px;
   color: #ffffff;
@@ -39,11 +40,16 @@
 }
 .mso-box-item img {
   /* margin-top: 80%; */
+  height: 71px;
 }
 
 .mbib {
   width: 100%;
   /* background: red; */
+}
+.msobi:nth-child(2) .mbib {
+  border-left: 1px solid #979797;
+  border-right: 1px solid #979797;
 }
 .mbn {
   margin-bottom: calc(5px + 6vmin);

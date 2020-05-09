@@ -1,0 +1,117 @@
+.designbanner-box {
+  display: flex;
+  flex: 1 0 auto;
+  height: 100%;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.designbanner-box .span-title {
+  font-family: PingFangSC-Regular;
+  font-size: 60px;
+  color: #ffffff;
+  letter-spacing: 1.07px;
+}
+.designbanner-box .span-dot {
+  width: 13px;
+  height: 13px;
+  background: #ffffff;
+  border-radius: 50%;
+  margin: 0px 3vmin;
+}
+
+.roadline-module {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  flex: 1 0 auto;
+  /* height: 100%; */
+  position: relative;
+}
+.roadline-title {
+  font-family: PingFangSC-Light;
+  font-size: 38px;
+  color: #ffffff;
+  letter-spacing: 0;
+  margin: 280px 0px;
+}
+.roadline-box {
+  position: relative;
+  width: 875px;
+  height: 624px;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.roadline-dot {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.roadline-dot:nth-child(1) {
+  top: -10px;
+  left: 108px;
+}
+.roadline-dot:nth-child(2) {
+  top: -10px;
+  right: 106px;
+}
+.roadline-dot:nth-child(3) {
+  top: 300px;
+  right: 106px;
+}
+.roadline-dot:nth-child(4) {
+  top: 300px;
+  left: 108px;
+}
+.roadline-dot:nth-child(5) {
+  top: 608px;
+  left: 108px;
+}
+.roadline-dot:nth-child(6) {
+  top: 608px;
+  right: 106px;
+}
+.roadline-box-icon h5 {
+  font-family: PingFangSC-Regular;
+  font-size: 18px;
+  color: #ffffff;
+  letter-spacing: 0.71px;
+  line-height: 38px;
+}
+.roadline-box-icon {
+  width: 90px;
+  height: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  position: absolute;
+}
+.roadline-box-icon:nth-child(1) {
+  top: -110px;
+  left: 75px;
+}
+.roadline-box-icon:nth-child(2) {
+  top: -110px;
+  right: 77px;
+}
+.roadline-box-icon:nth-child(3) {
+  top: 200px;
+  right: 77px;
+}
+.roadline-box-icon:nth-child(4) {
+  top: 200px;
+  left: 75px;
+}
+.roadline-box-icon:nth-child(5) {
+  top: 505px;
+  left: 75px;
+}
+.roadline-box-icon:nth-child(6) {
+  top: 505px;
+  right: 77px;
+}
