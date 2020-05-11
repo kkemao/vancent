@@ -21,7 +21,11 @@ function Home(props: Props) {
     "teamlogo5.png",
     "teamlogo6.png"
   ];
-  const badgesImg = ["tengxun.png", "huawei.png", "sanxing.png"];
+  const badgesImg = [
+    { imgName: "tengxun.png", text1: "腾讯T派", text2: "全国优秀团队" },
+    { imgName: "huawei.png", text1: "华为主题", text2: "设计优秀奖" },
+    { imgName: "sanxing.png", text1: "三星移动", text2: "创意设计优秀奖" }
+  ];
   return (
     <div className="App-header">
       <Header styleMode={StyleMode.BLACK} {...props} />
@@ -75,12 +79,20 @@ function Home(props: Props) {
         ))}
       </div>
       <div className="section-sixth">
-        {badgesImg.map(url => (
+        {badgesImg.map(item => (
           <div
             className="ss-item"
-            style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/${url})` }}
-            key={url}
-          ></div>
+            // style={{
+            //   backgroundImage: `url(${process.env.PUBLIC_URL}/${item.imgName})`
+            // }}
+            key={item.imgName}
+          >
+            <div className="ss-item-div">
+              <img src={`${process.env.PUBLIC_URL}/${item.imgName}`} />
+              <span className="ss-item-txt txt1">{item.text1}</span>
+              <span className="ss-item-txt">{item.text2}</span>
+            </div>
+          </div>
         ))}
       </div>
       <Seemore content="查看我们更多案例" />
