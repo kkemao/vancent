@@ -98,10 +98,12 @@
 .header .li-second:hover > span {
   color: white;
 }
+.header .li-second.active,
 .header .li-second:nth-child(2):hover:after {
   -webkit-filter: drop-shadow(0px 0 0 #dab475);
   filter: drop-shadow(0px 0 0 #dab475);
 }
+.header .li-second.active,
 .header .li-second:nth-child(1):hover:after {
   -webkit-filter: drop-shadow(0px 0 0 #2996ff);
   filter: drop-shadow(0px 0 0 #2996ff);
@@ -133,4 +135,13 @@
   background: #0071ff;
   position: relative;
   top: 8px;
+}
+.li-first-span {
+  display: flex;
+  align-items: center;
+}
+.li-first-span svg {
+  position: relative;
+  top: 2px;
+  margin-left: 2px;
 }

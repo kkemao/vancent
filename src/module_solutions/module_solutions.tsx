@@ -22,11 +22,11 @@ function Mso(props: Props) {
   return (
     <div className="mso-box">
       {msoList.map(_i => (
-        <div className="mso-box-item msobi">
+        <div className="mso-box-item msobi" key={_i.title}>
           <h5 className="mso-title">{_i.title}</h5>
           <div className="mso-box-item mbib">
             {_i.item.map(_ii => (
-              <div className="mso-box-item">
+              <div className="mso-box-item" key={_ii.content}>
                 <img
                   src={`${process.env.PUBLIC_URL}/${_ii.imgName}`}
                   alt="icon"

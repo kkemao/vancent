@@ -52,6 +52,7 @@
   position: absolute;
   left: calc(50% - 25px);
   bottom: 42px;
+  animation: mouseMove 4s infinite;
 }
 .center-right {
   background-size: auto;

@@ -1,0 +1,101 @@
+/* 合作咨询 弹窗 */
+.email-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.email-box {
+  width: 66.2%;
+  height: 87.3%;
+  background: #111111;
+  padding: 2% 7%;
+  overflow: auto;
+}
+.email-tool {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.email-title {
+  font-family: PingFangSC-Medium;
+  font-size: 35px;
+  letter-spacing: 3px;
+  text-align: center;
+  line-height: 50px;
+}
+.email-content-div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  height: 80%;
+}
+.email-content-div > h5 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4%;
+}
+.email-item-txt {
+  font-family: PingFangSC-Medium;
+  font-size: 18px;
+  color: #ffffff;
+  letter-spacing: 2px;
+  line-height: 60px;
+}
+.email-content-div input {
+  background: #111111;
+  border: 1px solid #979797;
+  font-size: 2em;
+  height: 70px;
+  line-height: 70px;
+  padding: 0px 15px;
+  color: white;
+}
+.email-content-div input:focus {
+  border: 1px solid #2996ff;
+}
+.email-content-div textarea {
+  color: white;
+  background: #111111;
+  border: 1px solid #979797;
+  font-size: 2em;
+  height: 200px;
+  line-height: 35px;
+  padding: 15px;
+}
+.email-content-div textarea:focus {
+  border: 1px solid #2996ff;
+}
+
+.email-item {
+  flex: 0 0 100%;
+}
+.email-item-half {
+  flex: 0 0 42%;
+}
+.button-style2 {
+  background: #3484ff;
+  border: 1px solid #3484ff;
+  width: 230px;
+  height: 70px !important;
+  margin-top: 3%;
+  font-size: 25px !important;
+}
+.email-tool-svg {
+  position: relative;
+  right: -8%;
+  cursor: pointer;
+  display: flex;
+  transition: all 0.3s ease;
+}
+.email-tool-svg:hover {
+  transform: rotateZ(180deg);
+}

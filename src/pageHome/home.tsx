@@ -88,7 +88,7 @@ function Home(props: Props) {
             key={item.imgName}
           >
             <div className="ss-item-div">
-              <img src={`${process.env.PUBLIC_URL}/${item.imgName}`} />
+              <img alt="" src={`${process.env.PUBLIC_URL}/${item.imgName}`} />
               <span className="ss-item-txt txt1">{item.text1}</span>
               <span className="ss-item-txt">{item.text2}</span>
             </div>

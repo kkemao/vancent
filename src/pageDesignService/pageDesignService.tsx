@@ -129,27 +129,27 @@ function DesignService(props: Props) {
           </div>
           <div>
             <div className="roadline-box-icon">
-              <img src={icon1} />
+              <img alt="" src={icon1} />
               <h5>沟通理解</h5>
             </div>
             <div className="roadline-box-icon">
-              <img src={icon2} />
+              <img alt="" src={icon2} />
               <h5>研究/分析</h5>
             </div>
             <div className="roadline-box-icon">
-              <img src={icon3} />
+              <img alt="" src={icon3} />
               <h5>创意策略</h5>
             </div>
             <div className="roadline-box-icon">
-              <img src={icon4} />
+              <img alt="" src={icon4} />
               <h5>设计实施</h5>
             </div>
             <div className="roadline-box-icon">
-              <img src={icon5} />
+              <img alt="" src={icon5} />
               <h5>设计规范</h5>
             </div>
             <div className="roadline-box-icon">
-              <img src={icon6} />
+              <img alt="" src={icon6} />
               <h5>落地执行</h5>
             </div>
           </div>

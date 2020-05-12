@@ -23,7 +23,7 @@ function Msoi(props: Props) {
       <div className="msoi-title">{title}</div>
       <div className="msoib-b">
         {msoiList.map(item => (
-          <div className="msoi-box-item">
+          <div className="msoi-box-item" key={item.content}>
             <img src={`${process.env.PUBLIC_URL}/${item.imgName}`} alt="icon" />
             <h5 className="msoi-content">{item.content}</h5>
             <h5 className="msoi-content2">{item.content2}</h5>

@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Button } from "antd";
+import { UserContext } from "../UserContext";
 
 function Footer() {
+  const { handleChangeIsShowEmailBox } = useContext(UserContext);
   return (
     <div className="section-eighth">
       <h5 className="section-eighth-title">合作咨询</h5>
@@ -14,6 +16,7 @@ function Footer() {
         // icon={<DownloadOutlined />}
         size={"large"}
         className="button-style mtp"
+        onClick={e => handleChangeIsShowEmailBox(true)}
       >
         合作咨询
       </Button>

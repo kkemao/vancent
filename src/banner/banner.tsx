@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Button } from "antd";
+import { UserContext } from "../UserContext";
 
 interface Props extends React.Props<any> {
   title: string;
@@ -10,6 +11,7 @@ interface Props extends React.Props<any> {
 
 function Banner(props: Props) {
   const { title, content, bannerImg, imgMode } = props;
+  const { handleChangeIsShowEmailBox } = useContext(UserContext);
   return (
     <div className="Main-container">
       <div
@@ -30,6 +32,7 @@ function Banner(props: Props) {
             // icon={<DownloadOutlined />}
             size={"large"}
             className="button-style"
+            onClick={e => handleChangeIsShowEmailBox(true)}
           >
             合作咨询
           </Button>

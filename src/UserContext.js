@@ -1,14 +1,17 @@
 import React, { createContext, useState } from "react";
-
+import Email from "./module_email";
 // 1. 使用 createContext 创建上下文
 export const UserContext = new createContext();
 
 // 2. 创建 Provider
 export const UserProvider = props => {
-  let [username, handleChangeUsername] = useState("");
+  let [isShowEmailBox, handleChangeIsShowEmailBox] = useState(false);
   return (
-    <UserContext.Provider value={{ username, handleChangeUsername }}>
+    <UserContext.Provider
+      value={{ isShowEmailBox, handleChangeIsShowEmailBox }}
+    >
       {props.children}
+      {isShowEmailBox ? <Email /> : ""}
     </UserContext.Provider>
   );
 };
