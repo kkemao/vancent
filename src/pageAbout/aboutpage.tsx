@@ -14,6 +14,8 @@ interface Props {
   history: H.History;
 }
 function AboutPage(props: Props) {
+  const { history } = props;
+  console.log(props);
   return (
     <div className="App-header">
       <Header styleMode={StyleMode.BLACK} {...props} />
@@ -50,7 +52,7 @@ function AboutPage(props: Props) {
         isReverse={false}
       />
       <div style={{ marginBottom: "5%" }}></div>
-      <Seemore content="直接联系我们" />
+      <Seemore content="直接联系我们" url="/contact" history={history} />
       <div style={{ marginBottom: "10px" }}></div>
       <Footer />
       {/* 章节八 FooterBottom */}

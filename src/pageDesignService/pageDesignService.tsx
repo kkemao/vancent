@@ -19,6 +19,7 @@ interface Props {
   history: H.History;
 }
 function DesignService(props: Props) {
+  const { history } = props;
   const msoList = [
     {
       title: "品牌",
@@ -155,8 +156,13 @@ function DesignService(props: Props) {
           </div>
         </div>
       </div>
-      <TextArrow img={"sjfw.svg"} title="设计服务" color="sfc-color" />
-      <Seemore content="查看我们更多案例" />
+      <TextArrow
+        img={"jsfw.svg"}
+        title="技术服务"
+        url="/service/technology"
+        history={history}
+      />
+      <Seemore content="查看我们更多案例" url="/case" history={history} />
       <div style={{ marginBottom: "10px" }}></div>
       <Footer />
       {/* 章节八 FooterBottom */}

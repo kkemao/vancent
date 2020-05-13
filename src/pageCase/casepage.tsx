@@ -12,6 +12,7 @@ interface Props {
   history: H.History;
 }
 function Case(props: Props) {
+  const { history } = props;
   return (
     <div className="App-header">
       <Header styleMode={StyleMode.BLACK} {...props} />
@@ -21,7 +22,11 @@ function Case(props: Props) {
         bannerImg="casebanner.png"
       />
       <CaseList />
-      <Seemore content="去看看我们能提供哪些服务" />
+      <Seemore
+        content="去看看我们能提供哪些服务"
+        history={history}
+        url="/service/technology"
+      />
       <div style={{ marginBottom: "10px" }}></div>
       <Footer />
       {/* 章节八 FooterBottom */}

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Cases from "../case/cases";
+import Case from "../case/index";
 
 function CaseList() {
   const [index, setIndex] = useState(0);

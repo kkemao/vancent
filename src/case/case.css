@@ -17,14 +17,14 @@
 }
 .shadow-title {
   font-family: PingFangSC-Semibold;
-  font-size: 40px;
+  font-size: 38px;
   color: #ffffff;
   letter-spacing: 2px;
   position: absolute;
   bottom: 13%;
   left: 3%;
   transition: all 0.3s ease;
-  transform: translateX(-100%);
+  /* transform: translateX(-100%); */
 }
 .shadow-content {
   font-family: PingFangSC-Medium;
@@ -35,13 +35,13 @@
   bottom: 5%;
   left: 3%;
   transition: all 0.4s ease;
-  transform: translateX(-100%);
+  /* transform: translateX(-100%); */
 }
 
-.case-box:hover .shadow-title,
+/* .case-box:hover .shadow-title,
 .case-box:hover .shadow-content {
   transform: translateX(0);
-}
+} */
 
 /* cases模块用到 */
 .section-third {
@@ -70,9 +70,9 @@
   background-position: center;
   background-repeat: no-repeat;
   transition: all 0.2s ease;
-  transform: scale(0);
+  /* transform: scale(0); */
 }
-.case-box:hover .case-arrow-r {
+/* .case-box:hover .case-arrow-r {
   transform: scale(1);
-}
+} */
 /* cases模块用到 */

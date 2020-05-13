@@ -98,12 +98,12 @@
 .header .li-second:hover > span {
   color: white;
 }
-.header .li-second.active,
+.header .li-second.active:nth-child(2),
 .header .li-second:nth-child(2):hover:after {
   -webkit-filter: drop-shadow(0px 0 0 #dab475);
   filter: drop-shadow(0px 0 0 #dab475);
 }
-.header .li-second.active,
+.header .li-second.active:nth-child(1),
 .header .li-second:nth-child(1):hover:after {
   -webkit-filter: drop-shadow(0px 0 0 #2996ff);
   filter: drop-shadow(0px 0 0 #2996ff);

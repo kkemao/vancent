@@ -14,7 +14,7 @@ function FooterBottom() {
           <h5 className="footbc-content">
             <span>品牌/创意设计服务</span>
           </h5>
-          <h5 className="footbc-content bluecolor">
+          <h5 className="footbc-content curp">
             <span>智慧数字化/开发服务</span>
           </h5>
         </div>
@@ -39,7 +39,7 @@ function FooterBottom() {
           <h5 className="footbc-content">
             <span>关于我们</span>
           </h5>
-          <h5 className="qrcode-box footbc-content pr bluecolor cp">
+          <h5 className="qrcode-box footbc-content curp pr cp">
             <span>公众号</span>
             <img
               src={`${process.env.PUBLIC_URL}/qrcode.png`}

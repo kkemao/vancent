@@ -16,6 +16,7 @@ interface Props {
 }
 
 function TechnologyService(props: Props) {
+  const { history } = props;
   const msoList = [
     {
       title: "移动解决方案",
@@ -107,8 +108,14 @@ function TechnologyService(props: Props) {
       <Mrd />
       <Mso msoList={msoList} />
       <Msoi title="行业解决方案" msoiList={msoiList} />
-      <TextArrow img={"jsfw.svg"} title="技术服务" />
-      <Seemore content="查看我们更多案例" />
+      <TextArrow
+        img={"sjfw.svg"}
+        title="设计服务"
+        color="sfc-color"
+        url="/service/design"
+        history={history}
+      />
+      <Seemore content="查看我们更多案例" url="/case" history={history} />
       <div style={{ marginBottom: "10px" }}></div>
       <Footer />
       {/* 章节八 FooterBottom */}

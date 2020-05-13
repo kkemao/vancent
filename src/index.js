@@ -12,23 +12,30 @@ import TechnologyService from "./pageTechnologyService";
 import DesignService from "./pageDesignService";
 import App1 from "./App1";
 import * as serviceWorker from "./serviceWorker";
+import ScrollToTop from "./ScrollToTop";
 ReactDOM.render(
   <UserProvider>
     <Router>
-      <Route path="/" exact render={() => <Redirect to="/home" push />}></Route>
-      <Route path="/home" exact component={Home}></Route>
-      <Route path="/case" exact component={Case}></Route>
-      <Route path="/contact" exact component={ContactPage}></Route>
-      <Route path="/about" exact component={AboutPage}></Route>
-      <Route
-        path="/service/technology"
-        exact
-        component={TechnologyService}
-      ></Route>
-      <Route path="/service/design" exact component={DesignService}></Route>
-      <Route path="/app" component={App1}></Route>
-      {/* <Redirect from="/" to="/home" /> */}
-      {/* <Route component={App1} /> */}
+      <ScrollToTop>
+        <Route
+          path="/"
+          exact
+          render={() => <Redirect to="/home" push />}
+        ></Route>
+        <Route path="/home" exact component={Home}></Route>
+        <Route path="/case" exact component={Case}></Route>
+        <Route path="/contact" exact component={ContactPage}></Route>
+        <Route path="/about" exact component={AboutPage}></Route>
+        <Route
+          path="/service/technology"
+          exact
+          component={TechnologyService}
+        ></Route>
+        <Route path="/service/design" exact component={DesignService}></Route>
+        <Route path="/app" component={App1}></Route>
+        {/* <Redirect from="/" to="/home" /> */}
+        {/* <Route component={App1} /> */}
+      </ScrollToTop>
     </Router>
   </UserProvider>,
   document.getElementById("root")

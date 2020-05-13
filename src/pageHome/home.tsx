@@ -13,6 +13,7 @@ interface Props {
 }
 function Home(props: Props) {
   console.log("zkf", props);
+  const { history } = props;
   const teamLogo = [
     "teamlogo1.png",
     "teamlogo2.png",
@@ -37,7 +38,10 @@ function Home(props: Props) {
       {/* 章节二 万视，用心打造数字化产品和品牌 */}
       <div className="section-sec">
         <h5 className="section-sec-title">万视，用心打造数字化产品和品牌</h5>
-        <h5 className="section-sec-content">
+        <h5
+          className="section-sec-content"
+          onClick={e => history.push("/case")}
+        >
           <span>了解所有案例</span>
           <span
             style={{
@@ -53,19 +57,28 @@ function Home(props: Props) {
       <div className="section-fourth">
         <h5 className="section-fourth-title">深入赋能行业，与品牌共同成长</h5>
         <h5 className="section-fourth-content">
-          <span className="sfc-color">设计服务</span>
+          <span
+            className="sfc-color"
+            onClick={e => history.push("/service/design")}
+          >
+            设计服务
+          </span>
           <span
             style={{
               backgroundImage: `url(${process.env.PUBLIC_URL}/sjfw.svg)`
             }}
             className="section-fourth-content-icon icon-mr"
+            onClick={e => history.push("/service/design")}
           ></span>
-          <span>技术服务</span>
+          <span onClick={e => history.push("/service/technology")}>
+            技术服务
+          </span>
           <span
             style={{
               backgroundImage: `url(${process.env.PUBLIC_URL}/jsfw.svg)`
             }}
             className="section-fourth-content-icon"
+            onClick={e => history.push("/service/technology")}
           ></span>
         </h5>
       </div>
@@ -95,7 +108,7 @@ function Home(props: Props) {
           </div>
         ))}
       </div>
-      <Seemore content="查看我们更多案例" />
+      <Seemore content="查看我们更多案例" url="/case" history={history} />
       <div style={{ marginBottom: "10px" }}></div>
       <Footer />
       {/* 章节八 FooterBottom */}

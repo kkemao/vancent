@@ -66,3 +66,7 @@
 .qrcode-box:hover .qrcode-style {
   opacity: 1;
 }
+
+.footbc-content.curp:hover {
+  color: #2996ff;
+}
