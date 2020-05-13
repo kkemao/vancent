@@ -1,20 +1,37 @@
 import React from "react";
+import * as H from "history";
+import { withRouter } from "react-router-dom";
 
-function FooterBottom() {
+interface Props {
+  history: H.History;
+}
+
+function FooterBottom(props: Props) {
+  const { history } = props;
   return (
     <div className="section-bottom">
       <div className="footb-item footb-content">
         <div className="footbc-item footbc-logo">
-          <img src={`${process.env.PUBLIC_URL}/footerlogo.png`} alt="logo" />
+          <img
+            src={`${process.env.PUBLIC_URL}/footerlogo.png`}
+            alt="logo"
+            onClick={e => history.push("/home")}
+          />
         </div>
         <div className="footbc-item footbc-item-c">
           <h5 className="footbc-title">
             <span>产品服务</span>
           </h5>
-          <h5 className="footbc-content">
+          <h5
+            className="footbc-content curp"
+            onClick={e => history.push("/service/design")}
+          >
             <span>品牌/创意设计服务</span>
           </h5>
-          <h5 className="footbc-content curp">
+          <h5
+            className="footbc-content curp"
+            onClick={e => history.push("/service/technology")}
+          >
             <span>智慧数字化/开发服务</span>
           </h5>
         </div>
@@ -36,7 +53,10 @@ function FooterBottom() {
           <h5 className="footbc-title">
             <span>万视</span>
           </h5>
-          <h5 className="footbc-content">
+          <h5
+            className="footbc-content curp"
+            onClick={e => history.push("/about")}
+          >
             <span>关于我们</span>
           </h5>
           <h5 className="qrcode-box footbc-content curp pr cp">
@@ -57,4 +77,4 @@ function FooterBottom() {
   );
 }
 
-export default FooterBottom;
+export default withRouter(FooterBottom);

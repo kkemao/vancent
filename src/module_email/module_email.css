@@ -27,7 +27,7 @@
 }
 .email-title {
   font-family: PingFangSC-Medium;
-  font-size: 35px;
+  font-size: 30px;
   letter-spacing: 3px;
   text-align: center;
   line-height: 50px;
@@ -45,7 +45,7 @@
 }
 .email-item-txt {
   font-family: PingFangSC-Medium;
-  font-size: 18px;
+  font-size: 16px;
   color: #ffffff;
   letter-spacing: 2px;
   line-height: 60px;
@@ -54,8 +54,8 @@
   background: #111111;
   border: 1px solid #979797;
   font-size: 2em;
-  height: 70px;
-  line-height: 70px;
+  height: 60px;
+  line-height: 60px;
   padding: 0px 15px;
   color: white;
 }
@@ -67,7 +67,7 @@
   background: #111111;
   border: 1px solid #979797;
   font-size: 2em;
-  height: 200px;
+  height: 180px;
   line-height: 35px;
   padding: 15px;
 }
@@ -85,9 +85,9 @@
   background: #3484ff;
   border: 1px solid #3484ff;
   width: 230px;
-  height: 70px !important;
+  height: 60px !important;
   margin-top: 3%;
-  font-size: 25px !important;
+  font-size: 23px !important;
 }
 .email-tool-svg {
   position: relative;
@@ -95,6 +95,9 @@
   cursor: pointer;
   display: flex;
   transition: all 0.3s ease;
+  width: 20px;
+  height: 20px;
+  display: flex;
 }
 /* .email-tool-svg:hover {
   transform: rotateZ(180deg);

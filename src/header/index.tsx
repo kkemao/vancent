@@ -79,7 +79,7 @@ function Header(props: Props): JSX.Element {
   return (
     <div className="Header-container">
       <header className="header">
-        <div className="header-logo">
+        <div className="header-logo curp" onClick={e => history.push("/home")}>
           {/* <span>万视</span>
         <span>|</span>
         <span>VANCENT</span> */}
