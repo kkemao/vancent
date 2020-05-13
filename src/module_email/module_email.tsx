@@ -48,7 +48,7 @@ function Email() {
             <textarea />
           </h5>
         </div>
-        <Button
+        {/* <Button
           type="primary"
           // shape="round"
           // icon={<DownloadOutlined />}
@@ -56,7 +56,8 @@ function Email() {
           className="button-style2 mtp"
         >
           提交
-        </Button>
+        </Button> */}
+        <span className="button-style2 curp">提交</span>
       </div>
     </div>
   );

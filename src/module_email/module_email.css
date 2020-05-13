@@ -82,12 +82,23 @@
   flex: 0 0 42%;
 }
 .button-style2 {
+  border: 1px solid #2996ff;
+  font-family: PingFangSC-Medium;
+  font-size: 23px;
+  color: #2996ff;
+  letter-spacing: 2px;
+  text-align: center;
+  display: flex;
+  width: 230px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.button-style2:hover {
   background: #3484ff;
   border: 1px solid #3484ff;
-  width: 230px;
-  height: 60px !important;
-  margin-top: 3%;
-  font-size: 23px !important;
+  color: white;
 }
 .email-tool-svg {
   position: relative;
