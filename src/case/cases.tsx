@@ -7,7 +7,6 @@ interface Props extends React.Props<any> {
 
 function Cases(props: Props) {
   const caseImg = ["case1.png", "case2.png", "case3.png", "case4.png"];
-  console.log(props);
   return (
     <div className="section-third">
       {caseImg.map(url => (

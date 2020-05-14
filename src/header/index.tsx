@@ -79,7 +79,11 @@ function Header(props: Props): JSX.Element {
   return (
     <div className="Header-container">
       <header className="header">
-        <div className="header-logo curp" onClick={e => history.push("/home")}>
+        <div
+          className="header-logo curp"
+          title="点击回到首页"
+          onClick={e => history.push("/home")}
+        >
           {/* <span>万视</span>
         <span>|</span>
         <span>VANCENT</span> */}

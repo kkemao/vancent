@@ -2,7 +2,7 @@ import React from "react";
 import * as H from "history";
 import { withRouter } from "react-router-dom";
 
-interface Props {
+interface Props extends React.Props<any> {
   history: H.History;
 }
 
@@ -14,8 +14,8 @@ function FooterBottom(props: Props) {
         <div className="footbc-item footbc-logo">
           <img
             src={`${process.env.PUBLIC_URL}/footerlogo.png`}
-            alt="logo"
-            onClick={e => history.push("/home")}
+            alt="点击回到首页"
+            onClick={e => history!.push("/home")}
           />
         </div>
         <div className="footbc-item footbc-item-c">

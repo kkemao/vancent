@@ -12,7 +12,6 @@ interface Props {
   history: H.History;
 }
 function Home(props: Props) {
-  console.log("zkf", props);
   const { history } = props;
   const teamLogo = [
     "teamlogo1.png",
