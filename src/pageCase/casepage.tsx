@@ -7,6 +7,7 @@ import Footer from "../footer";
 import FooterBottom from "../footerbottom";
 import CaseList from "../caselistbox";
 import Seemore from "../seemorecase";
+import Hwrap from "../Hwrap";
 
 interface Props {
   history: H.History;
@@ -14,7 +15,7 @@ interface Props {
 function Case(props: Props) {
   const { history } = props;
   return (
-    <div className="App-header">
+    <Hwrap>
       <Header styleMode={StyleMode.BLACK} {...props} />
       <Banner
         title="案例 | 赋能数字化与新消费"
@@ -31,7 +32,7 @@ function Case(props: Props) {
       <Footer />
       {/* 章节八 FooterBottom */}
       <FooterBottom />
-    </div>
+    </Hwrap>
   );
 }
 

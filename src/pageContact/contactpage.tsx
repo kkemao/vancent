@@ -6,13 +6,15 @@ import { StyleMode } from "../constants/Header";
 import Footer from "../footer";
 import FooterBottom from "../footerbottom";
 import Exlogo from "../exlogo";
+import Hwrap from "../Hwrap";
 
 interface Props {
   history: H.History;
 }
 function ContactPage(props: Props) {
+
   return (
-    <div className="App-header">
+    <Hwrap>
       <Header styleMode={StyleMode.BLACK} {...props} />
       <Banner
         title="联系我们"
@@ -24,7 +26,7 @@ function ContactPage(props: Props) {
       <Footer />
       {/* 章节八 FooterBottom */}
       <FooterBottom />
-    </div>
+    </Hwrap>
   );
 }
 

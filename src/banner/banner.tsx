@@ -12,6 +12,7 @@ interface Props extends React.Props<any> {
 function Banner(props: Props) {
   const { title, content, bannerImg, imgMode } = props;
   const { handleChangeIsShowEmailBox } = useContext(UserContext);
+
   return (
     <div className="Main-container">
       <div

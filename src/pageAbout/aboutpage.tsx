@@ -9,6 +9,7 @@ import FooterBottom from "../footerbottom";
 import AboutusSec from "../aboutusSec";
 import Vision from "../vision";
 import Introduce from "../introduce";
+import Hwrap from "../Hwrap";
 
 interface Props {
   history: H.History;
@@ -17,7 +18,7 @@ function AboutPage(props: Props) {
   const { history } = props;
   console.log(props);
   return (
-    <div className="App-header">
+    <Hwrap>
       <Header styleMode={StyleMode.BLACK} {...props} />
       <Banner
         title="关于我们"
@@ -57,7 +58,7 @@ function AboutPage(props: Props) {
       <Footer />
       {/* 章节八 FooterBottom */}
       <FooterBottom />
-    </div>
+    </Hwrap>
   );
 }
 

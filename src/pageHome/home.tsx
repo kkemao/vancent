@@ -7,6 +7,7 @@ import Cases from "../case/cases";
 import Footer from "../footer";
 import FooterBottom from "../footerbottom";
 import Seemore from "../seemorecase";
+import Hwrap from "../Hwrap";
 
 interface Props {
   history: H.History;
@@ -27,7 +28,7 @@ function Home(props: Props) {
     { imgName: "sanxing.png", text1: "三星移动", text2: "创意设计优秀奖" }
   ];
   return (
-    <div className="App-header">
+    <Hwrap>
       <Header styleMode={StyleMode.BLACK} {...props} />
       <Banner
         title="让创意再次伟大"
@@ -112,7 +113,7 @@ function Home(props: Props) {
       <Footer />
       {/* 章节八 FooterBottom */}
       <FooterBottom />
-    </div>
+    </Hwrap>
   );
 }
 

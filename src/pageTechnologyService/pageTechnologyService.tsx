@@ -10,6 +10,7 @@ import Seemore from "../seemorecase";
 import Mrd from "../module_rd";
 import Mso from "../module_solutions";
 import Msoi from "../module_solutions_industry";
+import Hwrap from "../Hwrap";
 
 interface Props {
   history: H.History;
@@ -98,7 +99,7 @@ function TechnologyService(props: Props) {
   ];
 
   return (
-    <div className="App-header">
+    <Hwrap>
       <Header styleMode={StyleMode.BLACK} {...props} />
       <Banner
         title="技术研发服务"
@@ -120,7 +121,7 @@ function TechnologyService(props: Props) {
       <Footer />
       {/* 章节八 FooterBottom */}
       <FooterBottom />
-    </div>
+    </Hwrap>
   );
 }
 

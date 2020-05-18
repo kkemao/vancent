@@ -8,6 +8,7 @@ import FooterBottom from "../footerbottom";
 import TextArrow from "../textarrow";
 import Seemore from "../seemorecase";
 import Mso from "../module_solutions";
+import Hwrap from "../Hwrap";
 import icon1 from "./asset/沟通理解icon.svg";
 import icon2 from "./asset/研究分析icon.svg";
 import icon3 from "./asset/创意策略.svg";
@@ -62,7 +63,7 @@ function DesignService(props: Props) {
     }
   ];
   return (
-    <div className="App-header">
+    <Hwrap>
       <Header styleMode={StyleMode.BLACK} {...props} />
       <Banner
         title="创意设计/营销服务"
@@ -167,7 +168,7 @@ function DesignService(props: Props) {
       <Footer />
       {/* 章节八 FooterBottom */}
       <FooterBottom />
-    </div>
+    </Hwrap>
   );
 }
 
