@@ -18,7 +18,7 @@ function ContactPage(props: Props) {
         title="联系我们"
         content="可以提交您的需求或者业务问题，我们会及时回复"
         bannerImg="contactbanner.png"
-        imgMode="centerright"
+        // imgMode="centerright"
       />
       <Exlogo />
       <Footer />

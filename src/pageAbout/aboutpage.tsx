@@ -23,7 +23,7 @@ function AboutPage(props: Props) {
         title="关于我们"
         content="以数字化转型为基础的科技和设计公司"
         bannerImg="aboutus.png"
-        imgMode="centerright"
+        // imgMode="centerright"
       />
       <AboutusSec />
       <Vision />
