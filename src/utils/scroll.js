@@ -17,7 +17,6 @@ function scrollAnimation(className, currentY, targetY) {
     _currentY += dist
     document.getElementsByClassName(className)[0].scrollTo(_currentY, currentY)
     // 如果移动幅度小于十个像素，直接移动，否则递归调用，实现动画效果
-    console.log('targety', targetY);
     if (needScrollTop > 10 || needScrollTop < -10) {
       scrollAnimation(className, _currentY, targetY)
     } else {
