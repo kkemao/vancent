@@ -1,22 +1,22 @@
 import React, { useState, useEffect } from "react";
 import { withRouter } from "react-router-dom";
-import {useWindowSize, useScroll, useScrolling} from 'react-use';
-import { scrollAnimation } from "./utils/scroll";
+// import {useWindowSize, useScroll, useScrolling} from 'react-use';
+// import { scrollAnimation } from "./utils/scroll";
 
 
 function Hwrap(props) {
     const [_y, setY] = useState(0);
     const scrollRef = React.useRef(null);
-    const scrolling = useScrolling(scrollRef);
-    const {y} = useScroll(scrollRef);
-    const {height} = useWindowSize();
-    if(y > _y + 100 && y < height && !scrolling){
-      scrollAnimation("App-header", y, height - 90);
-      setY(height);
-    } else if(y < _y && !scrolling){
-        setY(y);
-    }
-    useEffect(()=>{
+    // const scrolling = useScrolling(scrollRef);
+    // const {y} = useScroll(scrollRef);
+    // const {height} = useWindowSize();
+    // if(y > _y + 100 && y < height && !scrolling){
+    //   scrollAnimation("App-header", y, height - 90);
+    //   setY(height);
+    // } else if(y < _y && !scrolling){
+    //     setY(y);
+    // }
+    useEffect(() => {
         // window.onscroll = function(e){e.stopPropagation();e.preventDefault();}
         // window.addEventListener('scroll', handleScroll)
         // window.removeEventListener('mousewheel', handleScroll);
@@ -24,10 +24,10 @@ function Hwrap(props) {
         //     var e = event || window.event;
         // });
         // window.addEventListener('mousewheel', handleScroll);
-        
+
     });
 
-    
+
     // let handleScroll = e => {
     //     e.preventDefault();
     //     e.stopPropagation();
@@ -47,7 +47,7 @@ function Hwrap(props) {
     //         }
     //     }
     // }
-  
+
     return <div className="App-header" ref={scrollRef}>
         {props.children}
     </div>;
